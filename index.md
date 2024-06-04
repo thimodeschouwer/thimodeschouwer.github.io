@@ -4,20 +4,8 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at ...
+I am a PhD student at the [Economics Department](https://feb.kuleuven.be/research/economics/ces) of Katholieke Universiteit Leuven funded by the [Research Foundation - Flanders](https://www.fwo.be/en/). I am currently visiting the Instutute for Applied Microeconomics at the [University of Bonn](https://www.uni-bonn.de/en/university/university).
 
-## Research Interests
-
-- **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
-
-## News
-
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
-- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019.
+My research is in labor and family economics. I'm interested in how individuals and firms value all kinds of job attributes and how this affects equilibrium labor market outcomes and wages. To study these questions I use models of matching and causal inference techniques.
 
 {% include_relative _includes/publications.md %}
-
-{% include_relative _includes/services.md %}
