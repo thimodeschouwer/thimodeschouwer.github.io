@@ -3,16 +3,9 @@ main:
   - title: Work Meaning and the Flexibility Puzzle
     authors: <strong> Thimo De Schouwer <strong> and Iris Kesternich
     pdf: ./assets/MeaningFlexibilityPuzzle.pdf
-  #  code: https://github.com/MrGiovanni/ContinualLearning
-  #  bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_example_2.png
     notes: Revise and Resubmit at Journal of Labor Economics
 
   - title: Work Meaning and Fair Wages
     authors: <strong> Thimo De Schouwer <strong>, Elisabeth Gsottbauer, Iris Kesternich, and Heiner Schumacher
     pdf: ./assets/MeaningFairWages.pdf
-  #  code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-  #  page: https://class-il.mpi-inf.mpg.de/mnemonics/
-  #  bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
     notes: Submitted
-  #  image: ./assets/img/teaser_example.png
