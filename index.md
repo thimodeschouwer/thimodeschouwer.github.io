@@ -8,6 +8,6 @@ I am a PhD student at the [Economics Department](https://feb.kuleuven.be/researc
 
 My research is in labor and family economics. I'm interested in how individuals and firms value all kinds of job attributes, how this affects equilibrium labor market outcomes, and what this implies for inequality. To study these questions I use models of matching and causal inference techniques.
 
-{% include_relative _includes/publications.md %}
+{% include_relative _includes/workingpapers.md %}
 
 {% include_relative _includes/workprogress.md %}
