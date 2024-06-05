@@ -18,8 +18,8 @@ twitter: https://x.com/ThimoDeSchouwer
 
 # Images (e.g., your profile picture and your website's favicon) 
 avatar: ./assets/img/FotoThimo.png
-favicon: ./assets/img/leuven_icon.png
-favicon_dark: ./assets/img/leuven_icon.png
+favicon: ./assets/img/leuven_icon.ico
+favicon_dark: ./assets/img/leuven_icon.ico
 
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
