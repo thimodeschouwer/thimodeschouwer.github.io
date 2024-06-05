@@ -1,6 +1,6 @@
 <h2 id="workprogress" style="margin: 2px 0px -15px;">Work in Progress</h2>
 
-<div class="workprogress">
+<div class="publications">
 <ol class="bibliography">
 
 {% for link in site.data.workprogress.main %}
