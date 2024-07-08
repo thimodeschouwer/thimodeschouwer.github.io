@@ -1,4 +1,4 @@
-@article{deschouwer2024workmeaningfair,
+@article{deschouwer2024meaningfair,
   title={Work Meaning and Fair Wages},
   author={De Schouwer, Thimo and Gsottbauer, Elisabeth and Kesternich, Iris and Schumacher, Heiner},
   year={2024},
