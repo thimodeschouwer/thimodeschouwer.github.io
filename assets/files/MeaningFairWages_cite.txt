@@ -1,0 +1,6 @@
+@article{deschouwer2024workmeaningfair,
+  title={Work Meaning and Fair Wages},
+  author={De Schouwer, Thimo and Gsottbauer, Elisabeth and Kesternich, Iris and Schumacher, Heiner},
+  year={2024},
+  publisher={Working Paper}
+}

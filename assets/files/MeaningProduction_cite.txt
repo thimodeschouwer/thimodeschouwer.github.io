@@ -1,0 +1,6 @@
+@article{deschouwer2024howto,
+  title={How to Make Work Meaningful?},
+  author={De Schouwer, Thimo and Deneus, Thibault and Forti, Marco},
+  year={2024},
+  publisher={Working Paper}
+}
