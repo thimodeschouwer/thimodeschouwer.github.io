@@ -7,7 +7,7 @@
   height:2.4rem;
   width:2.4rem;
   background-color:transparent;
-  color:#043361!important;
+  color:#000000!important;
   border-radius:100%;
   text-align:center;
   font-size:1.15rem;
@@ -29,7 +29,7 @@
       }
       .social-icons a:hover:after {
         width: 100%;
-        background: #337ab7;
+        background: #000000;
       }
      */
 
@@ -70,16 +70,16 @@
   margin:-1.8rem}
 
 .twitter span{
-  background-color:#4099ff}
+  background-color:#000000}
 
 .facebook span{
-  background-color:#4286f4}
+  background-color:#000000}
 
 .linkedin span{
-  background-color:#0077B5}
+  background-color:#000000}
 
 .github span{
-  background-color:#000}
+  background-color:#000000}
 
 email {
     font-size: 14px;
@@ -102,16 +102,16 @@ email {
   z-index:10}
 
 .icon-button .icon-twitter{
-  color:#4099ff}
+  color:#000000}
 
 .icon-button .icon-facebook{
-  color:#4286f4}
+  color:#000000}
 
 .icon-button .icon-github{
-  color:#000;}
+  color:#000000;}
 
 .icon-button .icon-linkedin{
-  color:#0077B5}
+  color:#000000}
 
 .icon-button:hover .icon-twitter,.icon-button:hover .icon-facebook,.icon-button:hover .icon-github,.icon-button:hover .icon-linkedin{color:white}
 
@@ -183,18 +183,18 @@ papertitle {
 
 h3, h4, h5, h6 {
   font-weight: 600;
-  color:#043361;
+  color:#228B22;
   margin:0 0 20px;
 }
 
 h1 {
   font-weight: 500;
-  color:#043361;
+  color:#000000;
   margin:0 0 20px;
 }
 
 h2 {
-  color:#043361;
+  color:#000000;
   font-weight: 500;
   margin:2px 0px 15px;
   font-size: 157%;
