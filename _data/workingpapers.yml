@@ -4,13 +4,13 @@ main:
     authors: with Iris Kesternich
     pdf: ./assets/files/MeaningFlexibilityPuzzle.pdf
     bibtex: ./assets/files/MeaningFlexibilityPuzzle_cite.txt
-    notes: R&R at Journal of Labor Economics
+    notes: | R&R at Journal of Labor Economics
 
   - title: Work Meaning and Fair Wages
     authors: with Elisabeth Gsottbauer, Iris Kesternich, and Heiner Schumacher
     pdf: ./assets/files/MeaningFairWages.pdf
     bibtex: ./assets/files/MeaningFairWages_cite.txt
-    notes: Submitted
+    notes: | Submitted
 
   - title: How to Make Work Meaningful?
     authors: with Thibault Deneus and Marco Forti
