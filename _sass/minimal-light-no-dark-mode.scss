@@ -339,6 +339,8 @@ header ul a:active {
 strong {
   color:#222;
   font-weight:500;
+  border: 1px solid #222;
+  padding-left: 0.25rem; padding-right: 0.25rem; padding-top: 0.1rem; padding-bottom: 0.1rem; border-radius: 5px;
 }
 
 header ul li + li + li {
