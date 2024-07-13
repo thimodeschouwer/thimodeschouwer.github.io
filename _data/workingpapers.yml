@@ -10,6 +10,7 @@ main:
     authors: with Elisabeth Gsottbauer, Iris Kesternich, and Heiner Schumacher
     pdf: ./assets/files/MeaningFairWages.pdf
     bibtex: ./assets/files/MeaningFairWages_cite.txt
+    presentation: ./assets/files/MeaningFairWagesPres.pdf
     notes: Submitted
 
   - title: How to Make Work Meaningful?
