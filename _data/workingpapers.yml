@@ -1,19 +1,19 @@
 main:
 
   - title: Work Meaning and the <i> Flexibility Puzzle </i>
-    authors: with Iris Kesternich
+    authors: with <a href = "https://sites.google.com/site/kesternichiris/home" > Iris Kesternich </a>
     pdf: ./assets/files/MeaningFlexibilityPuzzle.pdf
     bibtex: ./assets/files/MeaningFlexibilityPuzzle_cite.txt
     notes: R&R at Journal of Labor Economics
 
   - title: Work Meaning and Fair Wages
-    authors: with Elisabeth Gsottbauer, Iris Kesternich, and Heiner Schumacher
+    authors: with <a href = "https://sites.google.com/site/elisabethgsottbauer/home" > Elisabeth Gsottbauer </a>, <a href = "https://sites.google.com/site/kesternichiris/home" > Iris Kesternich </a>, and <a href = "https://hschumacher81.com" > Heiner Schumacher </a>
     pdf: ./assets/files/MeaningFairWages.pdf
     bibtex: ./assets/files/MeaningFairWages_cite.txt
     page: ./assets/files/MeaningFairWagesPres.pdf
     notes: Submitted
 
   - title: How to Make Work Meaningful?
-    authors: with Thibault Deneus and Marco Forti
+    authors: with <a href = "https://www.kuleuven.be/wieiswie/en/person/00149751" > Thibault Deneus </a> and <a href = "https://www.econ.uni-bonn.de/en/department/doctoral-students/marco-forti" > Marco Forti </a>
     pdf: ./assets/files/MeaningProduction.pdf
     bibtex: ./assets/files/MeaningProduction_cite.txt
