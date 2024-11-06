@@ -1,11 +1,5 @@
 main:
 
-  - title: Work Meaning and the <i> Flexibility Puzzle </i>
-    authors: with <a href = "https://sites.google.com/site/kesternichiris/home" > Iris Kesternich </a>
-    pdf: ./assets/files/MeaningFlexibilityPuzzle.pdf
-    bibtex: ./assets/files/MeaningFlexibilityPuzzle_cite.txt
-    notes: Accepted at the Journal of Labor Economics
-
   - title: Work Meaning and Fair Wages
     authors: with <a href = "https://sites.google.com/site/elisabethgsottbauer/home" > Elisabeth Gsottbauer</a>, <a href = "https://sites.google.com/site/kesternichiris/home" > Iris Kesternich</a>, and <a href = "https://hschumacher81.com" > Heiner Schumacher </a>
     pdf: ./assets/files/MeaningFairWages.pdf
