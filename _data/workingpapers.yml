@@ -2,7 +2,7 @@ main:
 
   - title: Work Meaning and the <i> Flexibility Puzzle </i>
     authors: with <a href = "https://sites.google.com/site/kesternichiris/home" > Iris Kesternich </a>
-    pdf: ./assets/files/MeaningFlexibilityPuzzle.pdf
+    Working Paper: ./assets/files/MeaningFlexibilityPuzzle.pdf
     bibtex: ./assets/files/MeaningFlexibilityPuzzle_cite.txt
     notes: Accepted at the Journal of Labor Economics
 
