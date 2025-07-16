@@ -8,7 +8,7 @@ main:
     notes: Submitted
 
   - title: How to Make Work Meaningful?
-    authors: with <a href = "https://www.kuleuven.be/wieiswie/en/person/00149751" > Thibault Deneus </a> and <a href = "https://www.econ.uni-bonn.de/en/department/doctoral-students/marco-forti" > Marco Forti </a>
+    authors: with <a href = "https://thibaultdeneus.github.io" > Thibault Deneus </a> and <a href = "https://www.econ.uni-bonn.de/en/department/doctoral-students/marco-forti" > Marco Forti </a>
     pdf: ./assets/files/MeaningProduction.pdf
     bibtex: ./assets/files/MeaningProduction_cite.txt
     notes: Submitted
