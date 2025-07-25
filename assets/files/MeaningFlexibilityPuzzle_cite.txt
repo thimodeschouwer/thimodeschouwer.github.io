@@ -2,5 +2,5 @@
   title={Work Meaning and the Flexibility Puzzle},
   author={De Schouwer, Thimo and Kesternich, Iris},
   year={2024},
-  publisher={Working Paper}
+  publisher={CESifo Working Paper No. 11300}
 }

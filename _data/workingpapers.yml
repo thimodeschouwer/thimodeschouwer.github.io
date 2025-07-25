@@ -4,7 +4,7 @@ main:
     authors: with <a href = "https://sites.google.com/site/elisabethgsottbauer/home" > Elisabeth Gsottbauer</a>, <a href = "https://sites.google.com/site/kesternichiris/home" > Iris Kesternich</a>, and <a href = "https://hschumacher81.com" > Heiner Schumacher </a>
     pdf: ./assets/files/MeaningFairWages.pdf
     bibtex: ./assets/files/MeaningFairWages_cite.txt
-    page: ./assets/files/MeaningFairWagesPres.pdf
+    slides: ./assets/files/MeaningFairWagesPres.pdf
     notes: Submitted
 
   - title: How to Make Work Meaningful?
