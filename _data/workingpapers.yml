@@ -1,12 +1,5 @@
 main:
 
-  - title: Work Meaning and Fair Wages
-    authors: with <a href = "https://sites.google.com/site/elisabethgsottbauer/home" > Elisabeth Gsottbauer</a>, <a href = "https://sites.google.com/site/kesternichiris/home" > Iris Kesternich</a>, and <a href = "https://hschumacher81.com" > Heiner Schumacher </a>
-    pdf: ./assets/files/MeaningFairWages.pdf
-    bibtex: ./assets/files/MeaningFairWages_cite.txt
-    slides: ./assets/files/MeaningFairWagesPres.pdf
-    notes: Submitted
-
   - title: How to Make Work Meaningful?
     authors: with <a href = "https://thibaultdeneus.github.io" > Thibault Deneus </a> and <a href = "https://www.econ.uni-bonn.de/en/department/doctoral-students/marco-forti" > Marco Forti </a>
     pdf: ./assets/files/MeaningProduction.pdf

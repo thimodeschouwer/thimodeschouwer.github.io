@@ -1,6 +1,6 @@
 @article{deschouwer2025howto,
-  title={How to Make Work Meaningful?},
+  title={What is Meaningful Work?},
   author={De Schouwer, Thimo and Deneus, Thibault and Forti, Marco},
   year={2025},
-  publisher={KU Leuven Discussion Paper Series 25.07}
+  publisher={Working Paper}
 }

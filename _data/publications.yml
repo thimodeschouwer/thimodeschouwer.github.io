@@ -6,3 +6,10 @@ main:
     bibtex: ./assets/files/MeaningFlexibilityPuzzle_cite.txt
     slides: ./assets/files/MeaningFlexibilityPuzzlePres.pdf
     notes: Accepted at the Journal of Labor Economics
+
+  - title: Work Meaning and Fair Wages
+    authors: with <a href = "https://sites.google.com/site/elisabethgsottbauer/home" > Elisabeth Gsottbauer</a>, <a href = "https://sites.google.com/site/kesternichiris/home" > Iris Kesternich</a>, and <a href = "https://hschumacher81.com" > Heiner Schumacher </a>
+    pdf: ./assets/files/MeaningFairWages.pdf
+    bibtex: ./assets/files/MeaningFairWages_cite.txt
+    slides: ./assets/files/MeaningFairWagesPres.pdf
+    notes: Accepted at the Labour Economics
