@@ -1,6 +1,6 @@
 main:
 
-  - title: How to Make Work Meaningful?
+  - title: What is Meaningful Work?
     authors: with <a href = "https://thibaultdeneus.github.io" > Thibault Deneus </a> and <a href = "https://www.econ.uni-bonn.de/en/department/doctoral-students/marco-forti" > Marco Forti </a>
     pdf: ./assets/files/MeaningProduction.pdf
     bibtex: ./assets/files/MeaningProduction_cite.txt
