@@ -57,7 +57,12 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 /* Spacing before buttons */
 .publications ol.bibliography li .links {
-  margin-top: 0.4rem;
+  margin-top: 0.2rem;
+}
+
+/* Spacing after journal */
+.pub-journal {
+  margin-bottom: 0.4rem;
 }
 
 /* Colorful buttons */
@@ -128,8 +133,8 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 /* Publication journal link */
 .pub-journal {
-  margin-top: 0.1rem;
-  margin-bottom: 0.1rem;
+  margin-top: 0;
+  margin-bottom: 0.4rem;
 }
 
 /* Publication notes (e.g., "Submitted") */
