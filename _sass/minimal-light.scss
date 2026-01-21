@@ -7,7 +7,7 @@
   height:2.4rem;
   width:2.4rem;
   background-color:transparent;
-  color:#043361!important;
+  color:#333!important;
   border-radius:100%;
   text-align:center;
   font-size:1.15rem;
@@ -227,18 +227,18 @@ papertitle {
 
 h3, h4, h5, h6 {
   font-weight: 600;
-  color:#043361;
+  color:#333;
   margin:0 0 20px;
 }
 
 h1 {
   font-weight: 500;
-  color:#043361;
+  color:#333;
   margin:0 0 20px;
 }
 
 h2 {
-  color:#043361;
+  color:#333;
   font-weight: 500;
   margin:2px 0px 15px;
   font-size: 157%;
@@ -267,12 +267,13 @@ h1 {
 }
 
 a {
-  color:#39c;
+  color:#2a5db0;
   text-decoration:none;
 }
 
 a:hover {
-  color:#069;
+  color:#1a3d70;
+  text-decoration:underline;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -3,5 +3,11 @@ main:
   - title: What is Meaningful Work?
     authors: with <a href = "https://thibaultdeneus.github.io" > Thibault Deneus </a> and <a href = "https://www.econ.uni-bonn.de/en/department/doctoral-students/marco-forti" > Marco Forti </a>
     pdf: ./assets/files/MeaningProduction.pdf
-    bibtex: ./assets/files/MeaningProduction_cite.txt
     notes: Submitted
+    bibtex: |
+      @article{deschouwer2025howto,
+        title={What is Meaningful Work?},
+        author={De Schouwer, Thimo and Deneus, Thibault and Forti, Marco},
+        year={2025},
+        publisher={Working Paper}
+      }

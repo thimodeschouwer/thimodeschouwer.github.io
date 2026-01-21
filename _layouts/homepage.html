@@ -109,6 +109,18 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script>
+    function toggleBibtex(button) {
+      var content = button.closest('.links').nextElementSibling;
+      if (content && content.classList.contains('bibtex-content')) {
+        if (content.style.display === 'none') {
+          content.style.display = 'block';
+        } else {
+          content.style.display = 'none';
+        }
+      }
+    }
+    </script>
     {% if site.google_analytics %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

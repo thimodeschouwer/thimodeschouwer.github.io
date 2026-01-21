@@ -7,39 +7,44 @@
 
 <li>
 <div class="pub-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 20px; margin: 0px 0px -8rem;">
-    {% if link.image %} 
-    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
+  <div class="col-sm-3 abbr">
+    {% if link.image %}
+    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1">
     {% endif %}
-    {% if link.conference_short %} 
+    {% if link.conference_short %}
     <abbr class="badge">{{ link.conference_short }}</abbr>
     {% endif %}
   </div>
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 20px; margin: 0px 0px -8rem;">
+  <div class="col-sm-9">
       <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
       <div class="author">{{ link.authors }}</div>
       <div class="periodical"><em>{{ link.conference }}</em>
       </div>
+      {% if link.notes %}
+      <div class="pub-note">{{ link.notes }}{% if link.journal %} at <a href="{{ link.journal_link }}" target="_blank">{{ link.journal }}</a>{% endif %}</div>
+      {% endif %}
     <div class="links">
-      {% if link.pdf %} 
-      <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      {% if link.pdf %}
+      <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0 btn-paper" role="button" target="_blank" style="font-size:12px;">PDF</a>
       {% endif %}
-      {% if link.code %} 
-      <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      {% if link.code %}
+      <a href="{{ link.code }}" class="btn btn-sm z-depth-0 btn-code" role="button" target="_blank" style="font-size:12px;">Code</a>
       {% endif %}
-      {% if link.page %} 
-      <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
+      {% if link.page %}
+      <a href="{{ link.page }}" class="btn btn-sm z-depth-0 btn-page" role="button" target="_blank" style="font-size:12px;">Project Page</a>
       {% endif %}
-      {% if link.bibtex %} 
-      <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
+      {% if link.bibtex %}
+      <a class="btn btn-sm z-depth-0 btn-bibtex" role="button" style="font-size:12px;cursor:pointer;" onclick="toggleBibtex(this)">BibTex</a>
       {% endif %}
-      {% if link.notes %} 
-      <strong> <i style="color:#00000">{{ link.notes }}</i></strong>
-      {% endif %}
-      {% if link.others %} 
+      {% if link.others %}
       {{ link.others }}
       {% endif %}
     </div>
+    {% if link.bibtex %}
+    <div class="bibtex-content" style="display:none;">
+      <pre>{{ link.bibtex }}</pre>
+    </div>
+    {% endif %}
   </div>
 </div>
 </li>

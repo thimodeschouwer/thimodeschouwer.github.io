@@ -183,18 +183,18 @@ papertitle {
 
 h3, h4, h5, h6 {
   font-weight: 600;
-  color:#228B22;
+  color:#333;
   margin:0 0 20px;
 }
 
 h1 {
   font-weight: 500;
-  color:#000000;
+  color:#333;
   margin:0 0 20px;
 }
 
 h2 {
-  color:#000000;
+  color:#333;
   font-weight: 500;
   margin:2px 0px 15px;
   font-size: 157%;
@@ -215,10 +215,11 @@ h1 {
 a {
   color:#007bff;
   text-decoration:none;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  color:#013e80;
+  color:#0056b3;
 }
 
 a small {
@@ -337,11 +338,10 @@ header ul a:active {
 }
 
 strong {
-  color:#222;
+  color:#666;
   font-weight:500;
-  border: 1px solid #222;
-  padding-left: 0.25rem; padding-right: 0.25rem; padding-top: 0.1rem; padding-bottom: 0.1rem; border-radius: 5px;
-  font-size: 12px;
+  font-style: normal;
+  font-size: 0.85em;
 }
 
 header ul li + li + li {

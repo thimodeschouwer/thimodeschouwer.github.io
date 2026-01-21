@@ -3,13 +3,28 @@ main:
   - title: Work Meaning and the <i> Flexibility Puzzle </i>
     authors: with <a href = "https://sites.google.com/site/kesternichiris/home" > Iris Kesternich </a>
     pdf: ./assets/files/MeaningFlexibilityPuzzle.pdf
-    bibtex: ./assets/files/MeaningFlexibilityPuzzle_cite.txt
     slides: ./assets/files/MeaningFlexibilityPuzzlePres.pdf
-    notes: Accepted at the Journal of Labor Economics
+    journal: Journal of Labor Economics
+    journal_link: https://www.journals.uchicago.edu/toc/jole/current
+    bibtex: |
+      @article{deschouwer2024workmeaning,
+        title={Work Meaning and the Flexibility Puzzle},
+        author={De Schouwer, Thimo and Kesternich, Iris},
+        year={2024},
+        publisher={CESifo Working Paper No. 11300}
+      }
 
   - title: Work Meaning and Fair Wages
     authors: with <a href = "https://sites.google.com/site/elisabethgsottbauer/home" > Elisabeth Gsottbauer</a>, <a href = "https://sites.google.com/site/kesternichiris/home" > Iris Kesternich</a>, and <a href = "https://hschumacher81.com" > Heiner Schumacher </a>
     pdf: ./assets/files/MeaningFairWages.pdf
-    bibtex: ./assets/files/MeaningFairWages_cite.txt
     slides: ./assets/files/MeaningFairWagesPres.pdf
-    notes: Accepted at Labour Economics
+    replication: https://www.sciencedirect.com/science/article/pii/S0927537125001320
+    journal: Labour Economics
+    journal_link: https://www.sciencedirect.com/science/article/pii/S0927537125001320
+    bibtex: |
+      @article{deschouwer2024meaningfair,
+        title={Work Meaning and Fair Wages},
+        author={De Schouwer, Thimo and Gsottbauer, Elisabeth and Kesternich, Iris and Schumacher, Heiner},
+        year={2024},
+        publisher={Working Paper}
+      }

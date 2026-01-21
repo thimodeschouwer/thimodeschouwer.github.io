@@ -18,7 +18,7 @@
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
-:root { --global-bg-color: #ffffff; --global-code-bg-color: rgba(181, 9, 172, 0.05); --global-text-color: #000000; --global-text-color-light: #828282; --global-theme-color: #002D72; --global-hover-color: #ffb81c; --global-footer-bg-color: #1c1c1c; --global-footer-text-color: #e8e8e8; --global-footer-link-color: #ffffff; --global-distill-app-color: #828282; }
+:root { --global-bg-color: #ffffff; --global-code-bg-color: rgba(181, 9, 172, 0.05); --global-text-color: #333333; --global-text-color-light: #666666; --global-theme-color: #2a5db0; --global-hover-color: #1a3d70; --global-footer-bg-color: #1c1c1c; --global-footer-text-color: #e8e8e8; --global-footer-link-color: #ffffff; --global-distill-app-color: #828282; }
 
 blockquote { background: var(--global-bg-color); border-left: 2px solid var(--global-theme-color); margin: 1.5em 10px; padding: 0.5em 10px; font-size: 1.2rem; }
 @media print, screen and (min-width: 480px) {.col-sm-9 {width: 100%;}}
@@ -35,9 +35,9 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography { list-style: none; padding: 0;  margin-top: 2rem;}
 
-.publications ol.bibliography li { min-height: 150px; margin-bottom: -5rem; }
+.publications ol.bibliography li { margin-bottom: 1.2rem; }
 
-.publications ol.bibliography li .abbr { height: 8rem; margin-bottom: -4rem; }
+.publications ol.bibliography li .abbr { margin-bottom: 0; }
 
 .publications ol.bibliography li .abbr abbr { display: inline-block; background-color: var(--global-theme-color); padding-left: 1rem; padding-right: 1rem; position: absolute; top: 8px; left: 16px; }
 
@@ -55,9 +55,109 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography li .author > em { border-bottom: 1px solid; font-style: normal; }
 
-.publications ol.bibliography li .links a.btn { color: #000000; border: 1px solid #ffc107; padding-left: 0.25rem; padding-right: 0.25rem; padding-top: 0.1rem; padding-bottom: 0.1rem; border-radius: 5px; background: #ffc107; }
+/* Spacing before buttons */
+.publications ol.bibliography li .links {
+  margin-top: 0.4rem;
+}
 
-.publications ol.bibliography li .links a.btn:hover { color: var(--global-theme-color); border-color: var(--global-theme-color); }
+/* Colorful buttons */
+.publications ol.bibliography li .links a.btn {
+  color: #fff;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 12px;
+  border: none;
+  margin-right: 0.3rem;
+  margin-bottom: 0.2rem;
+  display: inline-block;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.publications ol.bibliography li .links a.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Blue for papers/WP */
+.btn-paper {
+  background: #007bff !important;
+}
+.btn-paper:hover {
+  background: #0056b3 !important;
+}
+
+/* Green for code */
+.btn-code {
+  background: #28a745 !important;
+}
+.btn-code:hover {
+  background: #1e7e34 !important;
+}
+
+/* Orange for slides */
+.btn-slides {
+  background: #fd7e14 !important;
+}
+.btn-slides:hover {
+  background: #e96b02 !important;
+}
+
+/* Deep green for Replication */
+.btn-replication {
+  background: #198754 !important;
+}
+.btn-replication:hover {
+  background: #146c43 !important;
+}
+
+/* Yellow for BibTeX */
+.btn-bibtex {
+  background: #ffc107 !important;
+  color: #212529 !important;
+}
+.btn-bibtex:hover {
+  background: #e0a800 !important;
+}
+
+/* Purple for project page */
+.btn-page {
+  background: #6f42c1 !important;
+}
+.btn-page:hover {
+  background: #5a32a3 !important;
+}
+
+/* Publication journal link */
+.pub-journal {
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+/* Publication notes (e.g., "Submitted") */
+.pub-note {
+  color:#555;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 0.2rem;
+  margin-bottom: 0.1rem;
+}
+
+/* Collapsible BibTeX content */
+.bibtex-content {
+  margin-top: 0.5rem;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+.bibtex-content pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 12px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
 
 .publications ol.bibliography li .hidden { font-size: 0.875rem; max-height: 0px; overflow: hidden; text-align: justify; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
 
@@ -72,3 +172,23 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 .publications ol.bibliography li div.abstract.hidden.open { border-color: var(--global-text-color); }
 
 .publications ol.bibliography li .teaser { border-radius: 8px; box-shadow: 3px 3px 6px #888; height: 123px; width: 270px; margin-top: 5px; margin-left: 5px; margin-bottom: 5px; object-fit: cover; }
+
+/* Mobile responsiveness - only apply on small screens */
+@media screen and (max-width: 600px) {
+  .pub-row {
+    display: block !important;
+  }
+
+  .pub-row .col-sm-3,
+  .pub-row .col-sm-9 {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 0 0.5rem 0 !important;
+  }
+
+  .publications ol.bibliography li .teaser {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+}

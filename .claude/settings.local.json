@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.lamadon.com)",
+      "Bash(bundle exec jekyll serve:*)",
+      "Bash(jekyll serve)",
+      "Bash(where:*)"
+    ]
+  }
+}
