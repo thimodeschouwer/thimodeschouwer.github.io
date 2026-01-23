@@ -4,6 +4,7 @@ main:
     authors: with <a href = "https://sites.google.com/site/kesternichiris/home" > Iris Kesternich </a>
     pdf: ./assets/files/MeaningFlexibilityPuzzle.pdf
     slides: ./assets/files/MeaningFlexibilityPuzzlePres.pdf
+    replication: https://github.com/thimodeschouwer/replication-meaningflexibilitypuzzle
     journal: Journal of Labor Economics
     journal_link: https://www.journals.uchicago.edu/toc/jole/current
     bibtex: |
