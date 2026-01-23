@@ -19,12 +19,14 @@ main:
     pdf: ./assets/files/MeaningFairWages.pdf
     slides: ./assets/files/MeaningFairWagesPres.pdf
     replication: https://www.sciencedirect.com/science/article/pii/S0927537125001320
-    journal: Labour Economics
+    journal: Labour Economics 97 (2025)
     journal_link: https://www.sciencedirect.com/science/article/pii/S0927537125001320
     bibtex: |
       @article{deschouwer2024meaningfair,
-        title={Work Meaning and Fair Wages},
+        title={Work meaning and fair wages},
         author={De Schouwer, Thimo and Gsottbauer, Elisabeth and Kesternich, Iris and Schumacher, Heiner},
-        year={2024},
-        publisher={Working Paper}
+        journal={Labour Economics},
+        pages={102808},
+        year={2025},
+        publisher={Elsevier}
       }
