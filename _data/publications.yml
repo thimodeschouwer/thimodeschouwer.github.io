@@ -19,11 +19,11 @@ main:
     authors: with <a href = "https://sites.google.com/site/elisabethgsottbauer/home" > Elisabeth Gsottbauer</a>, <a href = "https://sites.google.com/site/kesternichiris/home" > Iris Kesternich</a>, and <a href = "https://hschumacher81.com" > Heiner Schumacher </a>
     pdf: ./assets/files/MeaningFairWages.pdf
     slides: ./assets/files/MeaningFairWagesPres.pdf
-    replication: https://www.sciencedirect.com/science/article/pii/S0927537125001320
+    replication: https://github.com/thimodeschouwer/replication-meaningfairness
     journal: Labour Economics 97 (2025)
     journal_link: https://www.sciencedirect.com/science/article/pii/S0927537125001320
     bibtex: |
-      @article{deschouwer2024meaningfair,
+      @article{deschouwer2025meaningfair,
         title={Work meaning and fair wages},
         author={De Schouwer, Thimo and Gsottbauer, Elisabeth and Kesternich, Iris and Schumacher, Heiner},
         journal={Labour Economics},
