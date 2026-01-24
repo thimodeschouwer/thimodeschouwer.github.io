@@ -142,8 +142,8 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
   color:#555;
   font-size: 0.9em;
   font-style: italic;
-  margin-top: 0.2rem;
-  margin-bottom: 0.1rem;
+  margin-top: 0;
+  margin-bottom: 0.4rem;
 }
 
 /* Collapsible BibTeX content */
