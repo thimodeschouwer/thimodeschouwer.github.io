@@ -58,11 +58,19 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography li .title { font-weight: bolder; }
 
-.publications ol.bibliography li .author a { border-bottom: 1px var(--global-theme-color); }
+.publications ol.bibliography li .title a { transition: color 0.15s ease; }
 
-.publications ol.bibliography li .author a:hover { border-bottom-style: solid; text-decoration: none; }
+.publications ol.bibliography li .title a:hover { color: #1a4a90; text-decoration: underline; }
+
+.publications ol.bibliography li .author a { transition: color 0.15s ease; }
+
+.publications ol.bibliography li .author a:hover { color: #1a4a90; text-decoration: underline; }
 
 .publications ol.bibliography li .author > em { border-bottom: 1px solid; font-style: normal; }
+
+.publications ol.bibliography li .pub-journal a { transition: color 0.15s ease; }
+
+.publications ol.bibliography li .pub-journal a:hover { color: #1a4a90; text-decoration: underline; }
 
 /* Simple bracketed text links like Lamadon's site */
 .publications ol.bibliography li .links a.btn {
