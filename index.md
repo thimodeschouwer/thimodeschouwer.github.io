@@ -2,7 +2,7 @@
 layout: homepage
 ---
 
-## About Me
+## {{ site.title }}
 
 I am an Economic Analyst in the Directorate General for  [Employment, Social Affairs, and Inclusion (DG EMPL)](https://employment-social-affairs.ec.europa.eu/index_en) at the European Commission. Before, I was a PhD student in the [Economics Department](https://feb.kuleuven.be/research/economics) at KU Leuven, funded by a Fellowship from the [Research Foundation Flanders](https://www.fwo.be/en/) (FWO). I also spent some time visiting the Institute for Applied Microeconomics (IAME) at the [University of Bonn](https://www.uni-bonn.de/en/university/university).
 

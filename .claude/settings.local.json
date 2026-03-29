@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(curl -s \"https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css\")"
+      "Bash(curl -s \"https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css\")",
+      "WebFetch(domain:tmensinger.com)",
+      "Bash(curl -s \"https://tmensinger.com/\")",
+      "Bash(curl:*)"
     ]
   }
 }
