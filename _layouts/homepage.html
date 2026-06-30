@@ -30,8 +30,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/publications.css">
     {% else %}
-    <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css">
-    <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
+    <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css?v=17">
+    <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css?v=17">
     {% endif %}
 
   </head>
@@ -98,6 +98,45 @@
           content.style.display = 'none';
         }
       }
+    }
+    function toggleOutreach(button) {
+      var col = button.closest('.col-sm-9');
+      if (!col) return;
+      var content = col.querySelector('.outreach-content');
+      if (content) {
+        content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+      }
+    }
+    function copyBibtex(button) {
+      var container = button.closest('.bibtex-content');
+      if (!container) return;
+      var pre = container.querySelector('pre');
+      if (!pre) return;
+      var text = pre.innerText;
+      var label = button.querySelector('span');
+      var done = function() {
+        button.classList.add('copied');
+        if (label) label.textContent = 'Copied';
+        setTimeout(function() {
+          button.classList.remove('copied');
+          if (label) label.textContent = 'Copy';
+        }, 1600);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, function() { fallbackCopyBibtex(text, done); });
+      } else {
+        fallbackCopyBibtex(text, done);
+      }
+    }
+    function fallbackCopyBibtex(text, done) {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); done(); } catch (e) {}
+      document.body.removeChild(ta);
     }
     </script>
     {% if site.google_analytics %}

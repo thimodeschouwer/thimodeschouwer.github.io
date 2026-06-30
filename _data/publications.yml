@@ -5,6 +5,13 @@ main:
     pdf: ./assets/files/MeaningFlexibilityPuzzle.pdf
     slides: ./assets/files/MeaningFlexibilityPuzzlePres.pdf
     replication: https://github.com/thimodeschouwer/replication-meaningflexibilitypuzzle
+    outreach:
+      - title: Meaningful work at the expense of family life? (HCHE, 2026)
+        url: https://www.hche.uni-hamburg.de/en/aktuelles/2026/2026-01-27-pm-meaningfuljobs.html
+      - title: The Flexibility Puzzle (CESifo Newsletter, 2024)
+        url: https://www.ifo.de/cesifo/newsletter/0524/CESifo_Newsletter_Issue_202405.html?cesifoNL202405
+      - title: Zinvol Werk en de Flexibiliteitspuzzel (LES, 2024)
+        url: https://feb.kuleuven.be/research/LES/pdf/LES2024-219.pdf
     journal: Journal of Labor Economics
     journal_link: https://www.journals.uchicago.edu/toc/jole/current
     bibtex: |
@@ -20,6 +27,11 @@ main:
     pdf: ./assets/files/MeaningFairWages.pdf
     slides: ./assets/files/MeaningFairWagesPres.pdf
     replication: https://github.com/thimodeschouwer/replication-meaningfairness
+    outreach:
+      - title: Zinvol Werk en Eerlijke Lonen (LES, 2026)
+        url: ./assets/files/LES_MeaningFairness.pdf
+      - title: Sinnstiftende Arbeit oder höheres Gehalt? (Die Presse, 2022)
+        url: https://www.diepresse.com/6170886/sinnstiftende-arbeit-oder-hoeheres-gehalt-was-ist-arbeitnehmern-wichtiger
     journal: Labour Economics 97 (2025)
     journal_link: https://www.sciencedirect.com/science/article/pii/S0927537125001320
     bibtex: |

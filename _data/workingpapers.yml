@@ -1,5 +1,18 @@
 main:
 
+  - title: The Price of Long Hours
+    authors: with <a href="https://sebastiaan-maes.github.io/">Sebastiaan Maes</a> and <a href="https://sites.google.com/site/tompotomsphd/home">Tom Potoms</a>
+    pdf: ./assets/files/PriceOfLongHours.pdf
+    notes: Submitted
+    bibtex: |
+      @article{deschouwer2026price,
+        title={The Price of Long Hours},
+        author={De Schouwer, Thimo and Maes, Sebastiaan and Potoms, Tom},
+        year={2026},
+        number={12779},
+        publisher={CESifo Working Paper}
+      }
+
   - title: What is Meaningful Work?
     authors: with <a href = "https://thibaultdeneus.github.io" > Thibault Deneus </a> and <a href = "https://www.econ.uni-bonn.de/en/department/doctoral-students/marco-forti" > Marco Forti </a>
     pdf: ./assets/files/MeaningProduction.pdf

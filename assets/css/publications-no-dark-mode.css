@@ -23,7 +23,7 @@
 blockquote { background: var(--global-bg-color); border-left: 2px solid var(--global-theme-color); margin: 1.5em 10px; padding: 0.5em 10px; font-size: 1.2rem; }
 @media print, screen and (min-width: 480px) {.col-sm-9 {width: 100%;}}
 
-.publications { margin-top: 1rem; }
+.publications { margin-top: 0; }
 
 .publications h1 { color: var(--global-theme-color); font-size: 2rem; text-align: center; margin-top: 1em; margin-bottom: 1em; }
 
@@ -33,9 +33,9 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications h2.year { color: #e8e8e8; border-top: 1px solid #e8e8e8; margin-top: 2rem; margin-bottom: 0rem; text-align: right; }
 
-.publications ol.bibliography { list-style: none; padding: 0;  margin-top: 2rem;}
+.publications ol.bibliography { list-style: none; padding: 0;  margin-top: 0;}
 
-.publications ol.bibliography li { margin-bottom: 1.2rem; }
+.publications ol.bibliography li { margin-bottom: 1rem; }
 
 .publications ol.bibliography li .abbr { margin-bottom: 0; }
 
@@ -139,6 +139,34 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
   background: #5a32a3 !important;
 }
 
+/* Deep red for outreach / policy publications */
+.btn-outreach {
+  background: #b02a37 !important;
+}
+.btn-outreach:hover {
+  background: #8e1f2b !important;
+}
+
+/* Expandable panel listing outreach / policy links */
+.outreach-content {
+  margin-top: 0.4rem;
+  font-size: 0.98em;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.outreach-content ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+.publications ol.bibliography li .outreach-content li {
+  margin-bottom: 0;
+}
+.outreach-content li::marker {
+  color: #b02a37;
+  font-size: 1.15em;
+}
+
 /* Publication journal link */
 .pub-journal {
   margin-top: 0;
@@ -147,29 +175,86 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 /* Publication notes (e.g., "Submitted") */
 .pub-note {
-  color:#555;
+  display: block;
+  width: fit-content;
+  color: #444;
   font-size: 0.9em;
-  font-style: italic;
-  margin-top: 0;
-  margin-bottom: 0.4rem;
+  font-style: normal;
+  font-weight: 500;
+  background: #ececec;
+  padding: 0.12rem 0.6rem;
+  border-radius: 11px;
+  margin-top: 0.35rem;
+  margin-bottom: 0.6rem;
 }
 
 /* Collapsible BibTeX content */
 .bibtex-content {
-  margin-top: 0.5rem;
-  background: #f8f9fa;
-  border: 1px solid #e9ecef;
-  border-radius: 4px;
-  padding: 0.5rem;
+  width: 100%;
+  max-width: 50%;
+  box-sizing: border-box;
+  margin-top: 0.6rem;
+  background: #ffc107;
+  border: 1px solid #d39e00;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  animation: bibtex-pop 0.18s ease;
+}
+@keyframes bibtex-pop {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.bibtex-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0.75rem;
+  background: #e9b500;
+  border-bottom: 1px solid #d39e00;
+}
+.bibtex-label {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #212529;
+}
+.bibtex-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid #212529;
+  color: #212529;
+  font-size: 11px;
+  line-height: 1;
+  padding: 4px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.bibtex-copy:hover {
+  background: #212529;
+  color: #ffc107;
+}
+.bibtex-copy.copied {
+  background: #146c43;
+  border-color: #146c43;
+  color: #fff;
 }
 .bibtex-content pre {
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
-  font-size: 12px;
+  font-size: 12.5px;
+  line-height: 1.5;
   background: transparent;
   border: none;
-  padding: 0;
+  padding: 0.75rem 0.9rem;
+  color: #212529;
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
 }
 
 .publications ol.bibliography li .hidden { font-size: 0.875rem; max-height: 0px; overflow: hidden; text-align: justify; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
@@ -203,5 +288,9 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
     width: 100%;
     max-width: 280px;
     height: auto;
+  }
+
+  .bibtex-content {
+    max-width: 100%;
   }
 }

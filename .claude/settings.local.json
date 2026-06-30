@@ -4,7 +4,23 @@
       "Bash(curl -s \"https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css\")",
       "WebFetch(domain:tmensinger.com)",
       "Bash(curl -s \"https://tmensinger.com/\")",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(bundle exec *)",
+      "Bash(ruby -v)",
+      "Bash(ls vendor/bundle/ruby/)",
+      "Bash(cat .bundle/config)",
+      "Bash(bundle install *)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(find . -iname \"*.html\" -not -path \"./vendor/*\" -not -path \"./_site/*\")",
+      "Bash(find assets *)",
+      "Bash(ls _data/)",
+      "Bash(cat _data/workingpapers.yml)",
+      "Bash(cat _data/workprogress.yml)",
+      "Bash(echo \"li margin served: $\\(curl -s http://127.0.0.1:4000/assets/css/publications-no-dark-mode.css)",
+      "WebFetch(domain:www.hche.uni-hamburg.de)",
+      "WebFetch(domain:www.ifo.de)",
+      "Bash(git -C \"C:/Users/desch/Dropbox/Thimo/Websites/thimodeschouwer.github.io\" log --oneline -8)",
+      "Bash(git -C \"C:/Users/desch/Dropbox/Thimo/Websites/thimodeschouwer.github.io\" status --short)"
     ]
   }
 }

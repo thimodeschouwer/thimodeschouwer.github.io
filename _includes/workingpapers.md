@@ -1,4 +1,4 @@
-<h2 id="publications" style="margin: 2px 0px -15px;">Working Papers</h2>
+<h2 id="workingpapers" class="section-heading">Working Papers</h2>
 
 <div class="publications">
 <ol class="bibliography">
@@ -33,6 +33,9 @@
       {% if link.slides %}
       <a href="{{ link.slides }}" class="btn btn-sm z-depth-0 btn-slides" role="button" target="_blank" style="font-size:12px;">Slides</a>
       {% endif %}
+      {% if link.outreach %}
+      <a class="btn btn-sm z-depth-0 btn-outreach" role="button" style="font-size:12px;cursor:pointer;" onclick="toggleOutreach(this)">Outreach</a>
+      {% endif %}
       {% if link.bibtex %}
       <a class="btn btn-sm z-depth-0 btn-bibtex" role="button" style="font-size:12px;cursor:pointer;" onclick="toggleBibtex(this)">BibTex</a>
       {% endif %}
@@ -42,14 +45,27 @@
     </div>
     {% if link.bibtex %}
     <div class="bibtex-content" style="display:none;">
+      <div class="bibtex-header">
+        <span class="bibtex-label">BibTeX</span>
+        <button class="bibtex-copy" type="button" onclick="copyBibtex(this)">
+          <i class="fas fa-copy"></i><span>Copy</span>
+        </button>
+      </div>
       <pre>{{ link.bibtex }}</pre>
+    </div>
+    {% endif %}
+    {% if link.outreach %}
+    <div class="outreach-content" style="display:none;">
+      <ul>
+      {% for item in link.outreach %}
+        <li><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></li>
+      {% endfor %}
+      </ul>
     </div>
     {% endif %}
   </div>
 </div>
 </li>
-
-<br>
 
 {% endfor %}
 
