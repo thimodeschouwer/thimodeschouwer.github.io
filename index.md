@@ -12,6 +12,4 @@ At the Commission, I build models of the labour market to inform contemporary em
 
 {% include_relative _includes/workingpapers.md %}
 
-{% comment %} Work in Progress section — re-enable by removing this comment wrapper.
 {% include_relative _includes/workprogress.md %}
-{% endcomment %}
