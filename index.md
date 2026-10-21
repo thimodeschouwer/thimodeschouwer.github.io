@@ -4,7 +4,9 @@ layout: homepage
 
 ## {{ site.title }}
 
-I am an Economic Analyst in the Analysis and Statistics unit of the Directorate General for [Employment, Social Affairs, and Inclusion](https://employment-social-affairs.ec.europa.eu/index_en) (DG EMPL) at the European Commission and Affiliated Researcher in the Economics Department at the [University of Antwerp](https://www.uantwerpen.be/en/research-groups/economics/). I hold a PhD in Economics from [KU Leuven](https://feb.kuleuven.be/research/economics), funded by a Fellowship from the [Research Foundation Flanders](https://www.fwo.be/en/) (FWO). I also spent some time visiting the Institute for Applied Microeconomics (IAME) at the [University of Bonn](https://www.uni-bonn.de/en/university/university). For further information, have a look at my [CV]({{ site.cv_link }}).
+I am an Economic Analyst in the Analysis and Statistics unit of the Directorate General for [Employment, Social Affairs, and Inclusion](https://employment-social-affairs.ec.europa.eu/index_en) (DG EMPL) at the European Commission. I am also an Affiliated Researcher in the Economics Department at the [University of Antwerp](https://www.uantwerpen.be/en/research-groups/economics/).
+
+I hold a PhD in Economics from [KU Leuven](https://feb.kuleuven.be/research/economics), funded by a Research Fellowship from the [Research Foundation Flanders](https://www.fwo.be/en/) (FWO). I also spent some time visiting the Institute for Applied Microeconomics (IAME) at the [University of Bonn](https://www.uni-bonn.de/en/university/university). Further information can be found on my [CV]({{ site.cv_link }}).
 
 At the Commission, I study the labour market impacts of AI and build models to inform contemporary employment policy. In my academic work, I study how workers and firms value different non-monetary job attributes, and how market conditions shape whose interests are reflected in equilibrium outcomes. To answer these questions, I use structural models of search and matching, causal inference methods, and experimental survey evidence.
 
