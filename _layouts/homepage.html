@@ -21,13 +21,16 @@
     <meta property="og:description" content="{{ site.description }}">
     {% if site.canonical %}
     <meta property="og:url" content="{{ site.canonical }}">
-    {% if site.avatar %}
-    <meta property="og:image" content="{{ site.canonical }}{{ site.avatar | remove_first: './' }}">
+    {% if site.preview_image %}
+    <meta property="og:image" content="{{ site.canonical }}{{ site.preview_image | remove_first: './' }}">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Portrait of {{ site.title }}">
-    <meta name="twitter:image" content="{{ site.canonical }}{{ site.avatar | remove_first: './' }}">
+    <meta name="twitter:image" content="{{ site.canonical }}{{ site.preview_image | remove_first: './' }}">
     {% endif %}
     {% endif %}
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ site.title }}">
     <meta name="twitter:description" content="{{ site.description }}">
 

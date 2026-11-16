@@ -4,7 +4,7 @@ email: thimo.deschouwer@kuleuven.be
 
 # Search Engine Optimization (SEO)
 keywords: Thimo De Schouwer, labor economics, labour economics, economist, European Commission, DG EMPL, search and matching, job amenities, structural models, KU Leuven
-description: Personal website of Thimo De Schouwer, an economist at the European Commission (DG EMPL) and KU Leuven PhD researching labor markets, search and matching, and the value of non-monetary job attributes.
+description: Personal website of Thimo De Schouwer, an economist at the European Commission.
 canonical: https://thimodeschouwer.github.io/
 
 # Links 
@@ -18,6 +18,8 @@ twitter: https://x.com/ThimoDeSchouwer
 
 # Images (e.g., your profile picture and your website's favicon) 
 avatar: ./assets/img/FotoThimo.png
+# Image shown when the site is shared (LinkedIn, WhatsApp, ...): 1200x630 pixels
+preview_image: ./assets/img/link_preview.png
 favicon: ./assets/img/ec_icon.png
 favicon_dark: ./assets/img/ec_icon.png
 
