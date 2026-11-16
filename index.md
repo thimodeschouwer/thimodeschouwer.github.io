@@ -2,8 +2,6 @@
 layout: homepage
 ---
 
-## {{ site.title }}
-
 I am an analyst in the Analysis and Statistics unit at the Directorate General for Employment, Social Affairs, and Inclusion (EMPL) of the [European Commission](https://employment-social-affairs.ec.europa.eu/index_en), where I build models to inform employment policy and study the labor market impacts of AI. Some recent policy work can be found <a class="policy-toggle" href="#policy-work" onclick="var d=document.getElementById('policy-work');d.hidden=!d.hidden;return false;">here</a>.
 
 <ul id="policy-work" class="policy-work" hidden>

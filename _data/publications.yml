@@ -3,6 +3,8 @@ main:
   - title: Work Meaning and the <i> Flexibility Puzzle </i>
     authors: with <a href = "https://sites.google.com/site/kesternichiris/home" > Iris Kesternich </a>
     pdf: ./assets/files/MeaningFlexibilityPuzzle.pdf
+    abstract: >-
+      We study heterogeneity in the prevalence of and preferences for workplace flexibility and work meaning. We show that, internationally, women and parents value flexibility more but do not work more flexible jobs. The gender dimension of this flexibility puzzle is related to differences in meaningful work, which women value higher and sort into, at a significant price corresponding to 20 to 70% less flexibility. The parental dimension is connected to preferences for meaning and flexibility diverging after childbirth. We show through counterfactuals that making meaningful jobs more flexible reduces the gender gap in total compensation by almost a quarter.
     slides: ./assets/files/MeaningFlexibilityPuzzlePres.pdf
     replication: https://github.com/thimodeschouwer/replication-meaningflexibilitypuzzle
     outreach:
@@ -25,6 +27,8 @@ main:
   - title: Work Meaning and Fair Wages
     authors: with <a href = "https://sites.google.com/site/elisabethgsottbauer/home" > Elisabeth Gsottbauer</a>, <a href = "https://sites.google.com/site/kesternichiris/home" > Iris Kesternich</a>, and <a href = "https://hschumacher81.com" > Heiner Schumacher </a>
     pdf: ./assets/files/MeaningFairWages.pdf
+    abstract: >-
+      Work meaning can be an important driver of labor supply. Since, by definition, work meaning is associated with benefits for others, it also has an important fairness dimension. In a theoretical model, we show that workers’ willingness to pay for work meaning can be positive or negative, depending on the relative strength of fairness concerns and meaning preferences. To examine the importance of these behavioral motives for labor supply, we conduct a survey experiment with representative samples from the Netherlands and Germany in which we vary within-subject the benefits that a job creates for others. We find that only a minority of workers are actually willing to sacrifice wage for work meaning. The average willingness to pay for work meaning is positive, but substantially lower than the willingness to pay for job flexibility. There is a strong negative relationship between fairness concerns and willingness to pay for work meaning. Thus, individuals who prioritize fairness are less likely to accept lower wages for meaningful work.
     slides: ./assets/files/MeaningFairWagesPres.pdf
     replication: https://github.com/thimodeschouwer/replication-meaningfairness
     outreach:

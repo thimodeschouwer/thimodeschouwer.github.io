@@ -3,6 +3,8 @@ main:
   - title: The Price of Long Hours
     authors: with <a href="https://sebastiaan-maes.github.io/">Sebastiaan Maes</a> and <a href="https://sites.google.com/site/tompotomsphd/home">Tom Potoms</a>
     pdf: ./assets/files/PriceOfLongHours.pdf
+    abstract: >-
+      Earnings premiums for long hours vary across occupations, shaping gender sorting and inequality. The leading explanation emphasizes firm-side production technologies, yet hours and wages are equilibrium outcomes reflecting worker preferences and market structure. We build a directed search-and-matching model that allows us to decompose the premium. Premiums compensate for the disutility of long hours and bargaining power; productivity explains little in Tech, where premiums approach 20%. This disutility is highest among women, who sort away from long-hours jobs; these amenity differences account for 22% of the gender earnings gap. In counterfactuals, general-equilibrium responses through market tightness substantially change policy impacts.
     notes: Submitted
     bibtex: |
       @article{deschouwer2026price,
@@ -16,6 +18,8 @@ main:
   - title: What is Meaningful Work?
     authors: with <a href = "https://thibaultdeneus.github.io" > Thibault Deneus </a> and <a href = "https://www.econ.uni-bonn.de/en/department/doctoral-students/marco-forti" > Marco Forti </a>
     pdf: ./assets/files/MeaningProduction.pdf
+    abstract: >-
+      Many people derive a sense of impact or purpose from their jobs – they consider work to be a source of meaning. But what makes work meaningful? Theoretical models suggest that meaning can be created through social and non-social impact. We exploit rich panel data representative of workers in the United States to empirically assess the importance of these channels, and estimate a non-linear, within individual production function for work meaning that allows for noisy and complementary inputs. The model explains most of the variation in meaning between, and half of the variation in meaning within individuals. We find that social impact is the most effective pathway to meaning, and estimate a direct output elasticity of about 0.44. The effectiveness of non-social impact differs significantly across demographic groups. We also find evidence of a negative interaction between social- and non-social impact. A standard deviation increase in social impact is twice as effective in creating meaning for individuals that perceive their jobs as having little non-social impact, compared to those with high perceived non-social impact.
     notes: Submitted
     bibtex: |
       @article{deschouwer2025howto,

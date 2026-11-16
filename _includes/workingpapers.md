@@ -30,8 +30,8 @@
       {% if link.code %}
       <a href="{{ link.code }}" class="btn btn-sm z-depth-0 btn-code" role="button" target="_blank" style="font-size:12px;">Code</a>
       {% endif %}
-      {% if link.slides %}
-      <a href="{{ link.slides }}" class="btn btn-sm z-depth-0 btn-slides" role="button" target="_blank" style="font-size:12px;">Slides</a>
+      {% if link.abstract %}
+      <a class="btn btn-sm z-depth-0 btn-abstract" role="button" style="font-size:12px;cursor:pointer;" onclick="toggleAbstract(this)">Abstract</a>
       {% endif %}
       {% if link.outreach %}
       <a class="btn btn-sm z-depth-0 btn-outreach" role="button" style="font-size:12px;cursor:pointer;" onclick="toggleOutreach(this)">Outreach</a>
@@ -43,6 +43,9 @@
       {{ link.others }}
       {% endif %}
     </div>
+    {% if link.abstract %}
+    <div class="abstract-content" style="display:none;">{{ link.abstract }}</div>
+    {% endif %}
     {% if link.bibtex %}
     <div class="bibtex-content" style="display:none;">
       <div class="bibtex-header">

@@ -14,9 +14,38 @@
     <link rel="canonical" href="{{ site.canonical }}"/>
     {% endif %}
 
+    <!-- Link preview card (LinkedIn, Slack, WhatsApp, X, ...) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    {% if site.canonical %}
+    <meta property="og:url" content="{{ site.canonical }}">
+    {% if site.avatar %}
+    <meta property="og:image" content="{{ site.canonical }}{{ site.avatar | remove_first: './' }}">
+    <meta property="og:image:alt" content="Portrait of {{ site.title }}">
+    <meta name="twitter:image" content="{{ site.canonical }}{{ site.avatar | remove_first: './' }}">
+    {% endif %}
+    {% endif %}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ site.description }}">
+
     <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png" />
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
     <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>
+
+    <script>
+      // Pick the color theme before the page paints: saved choice first, otherwise the system setting.
+      (function () {
+        var theme = null;
+        try { theme = localStorage.getItem('theme'); } catch (e) {}
+        if (theme !== 'dark' && theme !== 'light') {
+          theme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
 
     <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
     <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin=anonymous>
@@ -30,30 +59,18 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/publications.css">
     {% else %}
-    <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css?v=17">
-    <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css?v=17">
+    <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css?v=18">
+    <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css?v=18">
     {% endif %}
 
   </head>
   <body>
     <div class="wrapper">
-      <header>
-
-        <div class="header-info">
-          {% if site.position %}
-          <div><position style="font-size:1.10rem;">{{ site.position }}</position></div>
-          {% endif %}
-          {% if site.affiliation %}
-          <div><a href="{{ site.affiliation_link }}" rel="noopener"><autocolor>{{ site.affiliation }}</autocolor></a></div>
-          {% endif %}
-        </div>
-
-      </header>
       <section>
 
       {% if site.avatar %}
       <div class="section-avatar">
-        <img src="{{ site.avatar }}" alt="avatar" />
+        <img src="{{ site.avatar }}" alt="Portrait of {{ site.title }}" />
         <div class="social-icons">
           {% if site.google_scholar %}
           <a style="margin: 0 5px 0 0" href="{{ site.google_scholar }}">
@@ -74,6 +91,19 @@
       </div>
       {% endif %}
 
+      <div class="name-row">
+        <h2 class="site-name">{{ site.title }}</h2>
+        <nav class="site-nav" aria-label="Main">
+          <a href="#publications">Research</a>
+          {% if site.cv_link %}
+          <a href="{{ site.cv_link }}" target="_blank" rel="noopener">CV</a>
+          {% endif %}
+          <button class="theme-toggle" type="button" onclick="toggleTheme()" aria-label="Switch between light and dark mode" title="Light / dark mode">
+            <i class="fas fa-moon icon-moon"></i><i class="fas fa-sun icon-sun"></i>
+          </button>
+        </nav>
+      </div>
+
       {{ content }}
 
       <br>
@@ -84,19 +114,33 @@
 
       </section>
       <footer>
-        
+        &copy; {{ site.time | date: "%Y" }} {{ site.title }} &middot; Last updated {{ site.time | date: "%B %Y" }}
       </footer>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     <script>
     function toggleBibtex(button) {
-      var content = button.closest('.links').nextElementSibling;
-      if (content && content.classList.contains('bibtex-content')) {
+      var col = button.closest('.col-sm-9');
+      var content = col ? col.querySelector('.bibtex-content') : null;
+      if (content) {
         if (content.style.display === 'none') {
           content.style.display = 'block';
         } else {
           content.style.display = 'none';
         }
+      }
+    }
+    function toggleTheme() {
+      var root = document.documentElement;
+      var theme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', theme);
+      try { localStorage.setItem('theme', theme); } catch (e) {}
+    }
+    function toggleAbstract(button) {
+      var col = button.closest('.col-sm-9');
+      if (!col) return;
+      var content = col.querySelector('.abstract-content');
+      if (content) {
+        content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
       }
     }
     function toggleOutreach(button) {

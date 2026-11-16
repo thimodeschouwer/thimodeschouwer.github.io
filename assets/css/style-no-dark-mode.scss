@@ -196,7 +196,7 @@ h2 {
 }
 
 /* Page title (the name) — top of the hierarchy */
-section > h2:first-of-type {
+.site-name {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 18px;
@@ -481,3 +481,188 @@ footer {
 .policy-work[hidden] {
   display: none;
 }
+
+/* ==========================================================================
+   Refresh: readable type, top navigation, footer, abstract panels, dark mode.
+   Colors that change between light and dark mode are variables; the button
+   and icon colors are the same in both.
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+  --bg: #fbfaf7;
+  --text: #3a3a3a;
+  --heading: #222222;
+  --muted: #6b6b6b;
+  --rule: #d8d0c0;
+  --link: rgba(0, 123, 255, 0.75);
+  --link-hover: #0056b3;
+  --panel-bg: #f8f8f8;
+  --panel-border: #e5e5e5;
+  --chip-bg: #ececec;
+  --chip-text: #444444;
+  --abstract-bg: #fff3e8;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #181715;
+  --text: #cdcbc6;
+  --heading: #f3f2ef;
+  --muted: #a39f97;
+  --rule: #423e36;
+  --link: rgba(90, 169, 255, 0.75);
+  --link-hover: #8fc5ff;
+  --panel-bg: #211f1c;
+  --panel-border: #38352f;
+  --chip-bg: #2f2c28;
+  --chip-text: #dad7d1;
+  --abstract-bg: #2e2219;
+}
+
+/* Type */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4, h5, h6 { color: var(--heading); }
+
+.site-name { font-size: 32px; }
+
+.section-heading { border-bottom-color: var(--rule); }
+
+a, autocolor { color: var(--link); }
+a:hover { color: var(--link-hover); }
+
+strong, dt, th { color: var(--muted); }
+
+code, pre { color: var(--text); }
+pre { background: var(--panel-bg); border-color: var(--panel-border); }
+hr { background: var(--rule); }
+th, td, blockquote { border-color: var(--panel-border); }
+
+/* Name with the small navigation on the same line */
+.name-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.3rem 1.5rem;
+  margin-bottom: 18px;
+}
+
+.name-row .site-name { margin: 2px 0 0; }
+
+.site-nav {
+  display: flex;
+  align-items: baseline;
+  gap: 1.3rem;
+  font-size: 0.95rem;
+}
+
+.site-nav a {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.site-nav a:hover { color: var(--link); }
+
+.theme-toggle {
+  background: none;
+  border: 0;
+  padding: 4px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.theme-toggle:hover { color: var(--link); }
+
+.theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: inline; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+/* Photo: a little smaller, starting level with the first line of the intro (below the name row) */
+.section-avatar {
+  width: 180px;
+  margin: 3.8rem 0 1.5rem 2.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .section-avatar {
+    width: 70%;
+    max-width: 240px;
+    margin: 0 auto 1.5rem;
+  }
+}
+
+.social-icons a:hover { background-color: transparent; }
+
+/* Footer */
+section { padding-bottom: 24px; }
+
+footer {
+  display: block;
+  border-top: 1px solid var(--rule);
+  padding: 1rem 0 2rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Abstract button and panel (orange, where Slides used to be) */
+
+.abstract-content {
+  max-width: 640px;
+  box-sizing: border-box;
+  margin-top: 0.6rem;
+  padding: 0.7rem 0.95rem;
+  background: var(--abstract-bg);
+  border-left: 3px solid rgba(253, 126, 20, 0.75);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.92em;
+  line-height: 1.55;
+  animation: bibtex-pop 0.18s ease;
+}
+
+/* Dark mode: pieces styled in publications-no-dark-mode.css */
+.publications ol.bibliography li .pub-note,
+.pub-note {
+  background: var(--chip-bg);
+  color: var(--chip-text);
+}
+
+:root[data-theme="dark"] .publications ol.bibliography li .title a:hover,
+:root[data-theme="dark"] .publications ol.bibliography li .author a:hover,
+:root[data-theme="dark"] .publications ol.bibliography li .pub-journal a:hover {
+  color: var(--link-hover);
+}
+
+/* Softer colors: buttons, colored panels and icons at 75% strength, full color on hover.
+   (Overrides the solid colors in publications-no-dark-mode.css.) */
+.publications ol.bibliography li .links a.btn-paper { background: rgba(0, 123, 255, 0.75) !important; }
+.publications ol.bibliography li .links a.btn-paper:hover { background: rgb(0, 123, 255) !important; }
+.publications ol.bibliography li .links a.btn-code { background: rgba(40, 167, 69, 0.75) !important; }
+.publications ol.bibliography li .links a.btn-code:hover { background: rgb(40, 167, 69) !important; }
+.publications ol.bibliography li .links a.btn-abstract { background: rgba(253, 126, 20, 0.75) !important; }
+.publications ol.bibliography li .links a.btn-abstract:hover { background: rgb(253, 126, 20) !important; }
+.publications ol.bibliography li .links a.btn-slides { background: rgba(253, 126, 20, 0.75) !important; }
+.publications ol.bibliography li .links a.btn-slides:hover { background: rgb(253, 126, 20) !important; }
+.publications ol.bibliography li .links a.btn-replication { background: rgba(25, 135, 84, 0.75) !important; }
+.publications ol.bibliography li .links a.btn-replication:hover { background: rgb(25, 135, 84) !important; }
+.publications ol.bibliography li .links a.btn-bibtex { background: rgba(255, 193, 7, 0.75) !important; }
+.publications ol.bibliography li .links a.btn-bibtex:hover { background: rgb(255, 193, 7) !important; }
+.publications ol.bibliography li .links a.btn-page { background: rgba(111, 66, 193, 0.75) !important; }
+.publications ol.bibliography li .links a.btn-page:hover { background: rgb(111, 66, 193) !important; }
+.publications ol.bibliography li .links a.btn-outreach { background: rgba(176, 42, 55, 0.75) !important; }
+.publications ol.bibliography li .links a.btn-outreach:hover { background: rgb(176, 42, 55) !important; }
+
+.publications .bibtex-content { background: rgba(255, 193, 7, 0.75); border-color: rgba(211, 158, 0, 0.75); }
+.publications .bibtex-header { background: rgba(233, 181, 0, 0.75); border-bottom-color: rgba(211, 158, 0, 0.75); }
+.publications .outreach-content li::marker { color: rgba(176, 42, 55, 0.75); }
+
+.social-icons a i { opacity: 0.75; transition: opacity 0.2s ease; }
+.social-icons a:hover i { opacity: 1; }
