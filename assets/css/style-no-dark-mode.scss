@@ -666,3 +666,9 @@ footer {
 
 .social-icons a i { opacity: 0.75; transition: opacity 0.2s ease; }
 .social-icons a:hover i { opacity: 1; }
+
+/* Tags under a paper title ("Submitted", "New version") on one row */
+.pub-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.35rem; margin-bottom: 0.6rem; }
+.pub-tags .pub-note { margin: 0; }
+.publications ol.bibliography li .pub-note.pub-new,
+.pub-note.pub-new { background: rgba(40, 167, 69, 0.75); color: #ffffff; }

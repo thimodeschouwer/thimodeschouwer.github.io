@@ -1,5 +1,5 @@
 @article{deschouwer2025howto,
-  title={What is Meaningful Work?},
+  title={Many Roads to Purpose? The Production of Meaningful Work},
   author={De Schouwer, Thimo and Deneus, Thibault and Forti, Marco},
   year={2025},
   publisher={Working Paper}
