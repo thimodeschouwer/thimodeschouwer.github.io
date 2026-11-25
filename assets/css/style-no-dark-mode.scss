@@ -671,4 +671,4 @@ footer {
 .pub-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.35rem; margin-bottom: 0.6rem; }
 .pub-tags .pub-note { margin: 0; }
 .publications ol.bibliography li .pub-note.pub-new,
-.pub-note.pub-new { background: rgba(40, 167, 69, 0.75); color: #ffffff; }
+.pub-note.pub-new { background: var(--bg); color: var(--heading); box-shadow: inset 0 0 0 1px var(--muted); }
