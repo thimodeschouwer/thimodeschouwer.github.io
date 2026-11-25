@@ -13,8 +13,8 @@ Alongside, I am an affiliated researcher at the Economics Department of the [Uni
 
 I hold a [PhD]({{ site.doctoral_thesis_link }}) in Economics from [KU Leuven](https://feb.kuleuven.be/research/economics), funded by a Research Fellowship from the [Research Foundation Flanders](https://www.fwo.be/en/) (FWO), which included a research visit at the Institute for Applied Microeconomics (IAME) at the [University of Bonn](https://www.uni-bonn.de/en/university/university). Further information can be found on my [CV]({{ site.cv_link }}).
 
-{% include_relative _includes/publications.md %}
-
 {% include_relative _includes/workingpapers.md %}
+
+{% include_relative _includes/publications.md %}
 
 {% include_relative _includes/workprogress.md %}

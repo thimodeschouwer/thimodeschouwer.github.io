@@ -20,8 +20,8 @@ twitter: https://x.com/ThimoDeSchouwer
 avatar: ./assets/img/FotoThimo.png
 # Image shown when the site is shared (LinkedIn, WhatsApp, ...): 1200x630 pixels
 preview_image: ./assets/img/link_preview.png
-favicon: ./assets/img/ec_icon.png
-favicon_dark: ./assets/img/ec_icon.png
+favicon: ./assets/img/dots_icon.png
+favicon_dark: ./assets/img/dots_icon.png
 
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."

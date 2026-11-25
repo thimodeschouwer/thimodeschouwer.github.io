@@ -18,6 +18,7 @@ main:
   - title: What is Meaningful Work?
     authors: with <a href = "https://thibaultdeneus.github.io" > Thibault Deneus </a> and <a href = "https://www.econ.uni-bonn.de/en/department/doctoral-students/marco-forti" > Marco Forti </a>
     pdf: ./assets/files/MeaningProduction.pdf
+    appendix: ./assets/files/MeaningProductionApp.pdf
     abstract: >-
       Many people derive a sense of impact or purpose from their jobs – they consider work to be a source of meaning. But what makes work meaningful? Theoretical models suggest that meaning can be created through social and non-social impact. We exploit rich panel data representative of workers in the United States to empirically assess the importance of these channels, and estimate a non-linear, within individual production function for work meaning that allows for noisy and complementary inputs. The model explains most of the variation in meaning between, and half of the variation in meaning within individuals. We find that social impact is the most effective pathway to meaning, and estimate a direct output elasticity of about 0.44. The effectiveness of non-social impact differs significantly across demographic groups. We also find evidence of a negative interaction between social- and non-social impact. A standard deviation increase in social impact is twice as effective in creating meaning for individuals that perceive their jobs as having little non-social impact, compared to those with high perceived non-social impact.
     notes: Submitted

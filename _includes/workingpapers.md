@@ -27,6 +27,9 @@
       {% if link.pdf %}
       <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0 btn-paper" role="button" target="_blank" style="font-size:12px;">WP</a>
       {% endif %}
+      {% if link.appendix %}
+      <a href="{{ link.appendix }}" class="btn btn-sm z-depth-0 btn-paper" role="button" target="_blank" style="font-size:12px;">Online Appendix</a>
+      {% endif %}
       {% if link.code %}
       <a href="{{ link.code }}" class="btn btn-sm z-depth-0 btn-code" role="button" target="_blank" style="font-size:12px;">Code</a>
       {% endif %}
